@@ -1,0 +1,54 @@
+/* ─── Tipografía base ────────────────────────────────────────── */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #faf8f5;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+/* ─── Admin: fondo diferente ─────────────────────────────────── */
+body.page-admin {
+  background-color: #f8f9fa;
+}
+
+/* ─── Scrollbar delgada (drawer + tablas) ────────────────────── */
+.thin-scroll::-webkit-scrollbar        { width: 4px; height: 4px; }
+.thin-scroll::-webkit-scrollbar-track  { background: transparent; }
+.thin-scroll::-webkit-scrollbar-thumb  { background: #d1d5db; border-radius: 2px; }
+
+/* ─── Tienda ─────────────────────────────────────────────────── */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.drawer-transition {
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-card {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-2px);
+}
+
+/* ─── Pedido: línea vertical del timeline ────────────────────── */
+.timeline-item:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 28px;
+  width: 2px;
+  height: calc(100% + 4px);
+  background: #e5e7eb;
+}
+
+/* ─── Estado inicial para animaciones de entrada ─────────────── */
+[data-anim] {
+  opacity: 0;
+}
