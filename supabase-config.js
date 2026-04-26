@@ -5,20 +5,20 @@
 
 // URL del proyecto Supabase
 // Formato: https://XXXXXXXXXX.supabase.co
-const SUPABASE_URL = 'https://TU_PROJECT_ID.supabase.co';
+const SUPABASE_URL = 'https://pzvlklvsfgmljhvoakkk.supabase.co';
 
 // Clave pública anon (solo para operaciones de lectura desde admin)
 // Supabase Dashboard → Settings → API → anon / public
-const SUPABASE_ANON_KEY = 'TU_ANON_KEY_AQUI';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB6dmxrbHZzZmdtbGpodm9ha2trIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcyNDE1NjcsImV4cCI6MjA5MjgxNzU2N30.y-dfhR5VNDpWXZfeDOENQRJcPPykIBqt4gUSW9UL7Bc';
 
 // URL del Cloudflare Worker (backend seguro)
 // El panel admin usa ÚNICAMENTE el Worker (con X-Admin-Key)
 // La service_role key NUNCA llega al navegador
-const WORKER_URL = 'https://postres-worker.TU_SUBDOMAIN.workers.dev';
+const WORKER_URL = 'https://worker.marypostresza.workers.dev/';
 
 // URL pública de la tienda (para links de "Ver tienda" en el panel)
 // Formato: https://TU_TIENDA.com  (sin slash final)
-const TIENDA_URL = 'https://TU_TIENDA.com';
+const TIENDA_URL = 'https://store.marypostresza.workers.dev/;
 
 const { createClient } = supabase;
 const db = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
