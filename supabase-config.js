@@ -5,7 +5,7 @@
 
 // URL del proyecto Supabase
 // Formato: https://XXXXXXXXXX.supabase.co
-const SUPABASE_URL = 'https://postres-worker.marypostresza.workers.dev';
+const SUPABASE_URL = 'https://pzvlklvsfgmljhvoakkk.supabase.co';
 
 // Clave pública anon (solo para operaciones de lectura desde admin)
 // Supabase Dashboard → Settings → API → anon / public
@@ -14,7 +14,7 @@ const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBh
 // URL del Cloudflare Worker (backend seguro)
 // El panel admin usa ÚNICAMENTE el Worker (con X-Admin-Key)
 // La service_role key NUNCA llega al navegador
-const WORKER_URL = 'https://worker.marypostresza.workers.dev/';
+const WORKER_URL = 'https://postres-worker.marypostresza.workers.dev';
 
 // URL pública de la tienda (para links de "Ver tienda" en el panel)
 // Formato: https://TU_TIENDA.com  (sin slash final)
