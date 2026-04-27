@@ -18,7 +18,7 @@ const WORKER_URL = 'https://postres-worker.marypostresza.workers.dev/';
 
 // URL pública de la tienda (para links de "Ver tienda" en el panel)
 // Formato: https://TU_TIENDA.com  (sin slash final)
-const TIENDA_URL = 'https://store.marypostresza.workers.dev/;
+const TIENDA_URL = 'https://store.marypostresza.workers.dev/';
 
 const { createClient } = supabase;
 const db = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
