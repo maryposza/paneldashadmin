@@ -5,7 +5,7 @@
 
 // URL del proyecto Supabase
 // Formato: https://XXXXXXXXXX.supabase.co
-const SUPABASE_URL = 'https://pzvlklvsfgmljhvoakkk.supabase.co';
+const SUPABASE_URL = 'https://postres-worker.marypostresza.workers.dev';
 
 // Clave pública anon (solo para operaciones de lectura desde admin)
 // Supabase Dashboard → Settings → API → anon / public
